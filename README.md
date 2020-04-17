@@ -60,7 +60,3 @@ pm.test("Status code is 404", function () {
 pm.test("Status code name is Not Found ", function () {
     pm.response.to.have.status("Not Found");
 });
-
-pm.test("Body matches empty string", function () {
-    pm.expect(pm.response.text()).to.include("");
-});
